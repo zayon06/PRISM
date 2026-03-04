@@ -22,12 +22,18 @@ FROM python:3.14-slim
 
 WORKDIR /app
 
+# Create non-root user for security
+RUN addgroup --system appuser && adduser --system --ingroup appuser appuser
+
 # Copy the virtual-env from builder
-COPY --from=builder /app /app
+COPY --from=builder --chown=appuser:appuser /app /app
+
+# Switch to non-root user
+USER appuser
 
 # Place venv at the front of PATH
 ENV PATH="/app/.venv/bin:$PATH"
 
 EXPOSE 8000
 
-CMD ["fastapi", "run", "app/main.py", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["fastapi", "run", "app/main.py", "--proxy-headers", "--port", "8000"]
