@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HeroTextSection = () => {
+const HeroText = () => {
 	return (
 		<div className='grid grid-cols-1 gap-7'>
 			{/* hero header */}
@@ -26,4 +26,4 @@ const HeroTextSection = () => {
 	);
 };
 
-export default HeroTextSection;
+export default HeroText;

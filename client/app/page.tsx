@@ -1,11 +1,11 @@
-import Hero from '@/components/template/hero';
-import Navbar from '@/components/template/navbar';
+import Navbar from '@/components/block/navbar';
+import LandingPage from '@/components/template/landing-page';
 
 export default function Home() {
 	return (
 		<div>
 			<Navbar />
-			<Hero />
+			<LandingPage />
 		</div>
 	);
 }

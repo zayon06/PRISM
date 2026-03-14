@@ -1,5 +1,5 @@
 import React from 'react';
-import NavLinks from '../ui/nav-links';
+import NavLinks from './nav-links';
 import { NavLinksProps } from '@/types/navbar';
 
 const linksData: NavLinksProps[] = [
@@ -25,7 +25,7 @@ const linksData: NavLinksProps[] = [
 	},
 ];
 
-const NavbarLinksSection = () => {
+const NavbarLink = () => {
 	return (
 		<div className='hidden md:flex gap-7 items-center'>
 			{linksData.map((items) => (
@@ -35,4 +35,4 @@ const NavbarLinksSection = () => {
 	);
 };
 
-export default NavbarLinksSection;
+export default NavbarLink;

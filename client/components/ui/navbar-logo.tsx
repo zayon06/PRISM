@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NavbarLogoSection = () => {
+const NavbarLogo = () => {
 	return (
 		<div>
 			<h1 className='text-[24px] leading-8 font-bold text-white'>PRISM</h1>
@@ -8,4 +8,4 @@ const NavbarLogoSection = () => {
 	);
 };
 
-export default NavbarLogoSection;
+export default NavbarLogo;
