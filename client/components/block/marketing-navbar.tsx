@@ -61,9 +61,9 @@ const MarketingNavbar = ({ activePage }: MarketingNavbarProps) => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <button className="text-sm font-bold px-6 py-2.5 rounded-lg border border-primary/20 text-white hover:bg-primary/10 transition-all">
+          <Link href="/login" className="text-sm font-bold px-6 py-2.5 rounded-lg border border-primary/20 text-white hover:bg-primary/10 transition-all">
             Login
-          </button>
+          </Link>
           <Link href="/profile" className="bg-primary hover:bg-primary/90 text-white text-sm font-bold px-6 py-2.5 rounded-lg shadow-lg shadow-primary/20 transition-all text-center">
             Request Demo
           </Link>

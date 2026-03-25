@@ -3,9 +3,11 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'motion/react';
+import { useRouter } from 'next/navigation';
 import StarsBackground from '@/components/ui/stars-background';
 
 const LandingHero = () => {
+    const router = useRouter();
     return (
         <section className="relative pt-32 pb-20 px-6 overflow-hidden bg-black">
             {/* Interactive Stars Background */}
