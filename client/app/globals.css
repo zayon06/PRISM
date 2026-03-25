@@ -31,7 +31,7 @@
 	--color-secondary-foreground: var(--secondary-foreground);
 	--color-secondary: var(--secondary);
 	--color-primary-foreground: var(--primary-foreground);
-	--color-primary: var(--primary);
+	--color-primary: #0da6f2;
 	--color-popover-foreground: var(--popover-foreground);
 	--color-popover: var(--popover);
 	--color-card-foreground: var(--card-foreground);
@@ -219,5 +219,19 @@
 	.obsidian-glass, .glass-panel {
 		background: rgba(10, 10, 10, 0.8);
 		backdrop-filter: blur(12px);
+	}
+	.skill-gradient-verified {
+		background: linear-gradient(135deg, #0da6f2 0%, #064e71 100%);
+	}
+	.skill-card-hover:hover {
+		border-color: #0da6f2;
+		transform: translateY(-2px);
+		transition: all 0.2s ease;
+	}
+	.silver-text {
+		background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
 	}
 }
