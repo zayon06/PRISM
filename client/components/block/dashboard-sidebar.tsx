@@ -26,10 +26,10 @@ import {
 
 const mainNavItems = [
 	{ label: 'Command Center', icon: LayoutGrid, href: '/dashboard' },
-	{ label: 'Workforce', icon: Users, href: '/workforce' },
-	{ label: 'Intelligence', icon: Sparkles, href: '/intelligence' },
-	{ label: 'Growth Hub', icon: TrendingUp, href: '/growth-hub' },
-	{ label: 'Project Board', icon: Kanban, href: '/project-board' },
+	{ label: 'Workforce', icon: Users, href: '/dashboard/workforce' },
+	{ label: 'Intelligence', icon: Sparkles, href: '/dashboard/intelligence' },
+	{ label: 'Growth Hub', icon: TrendingUp, href: '/dashboard/growth-hub' },
+	{ label: 'Project Board', icon: Kanban, href: '/dashboard/project-board' },
 ];
 
 const footerNavItems = [
