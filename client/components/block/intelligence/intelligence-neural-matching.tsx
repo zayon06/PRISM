@@ -92,7 +92,7 @@ const IntelligenceNeuralMatching = () => {
                              {/* Rotating Node on Middle Ring */}
                              <motion.div 
                                 animate={{ rotate: 360 }}
-                                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                                transition={{ duration: 10, repeat: Infinity, ease: "linear" as const }}
                                 className="absolute inset-0"
                              >
                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rounded-full shadow-[0_0_15px_rgba(13,166,242,0.8)]"></div>
@@ -103,7 +103,7 @@ const IntelligenceNeuralMatching = () => {
                                 <div className="w-full h-full border border-primary/60 rounded-full flex items-center justify-center bg-primary/5">
                                     <motion.span 
                                         animate={{ scale: [1, 1.1, 1] }}
-                                        transition={{ duration: 4, repeat: Infinity }}
+                                        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const }}
                                         className="material-symbols-outlined text-primary text-5xl" 
                                         aria-hidden="true" 
                                         style={{ fontVariationSettings: "'FILL' 1" }}

@@ -49,7 +49,7 @@ const LandingPricing = () => {
         visible: { 
             opacity: 1, 
             y: 0,
-            transition: { duration: 0.6, ease: "easeOut" }
+            transition: { duration: 0.6, ease: "easeOut" as const }
         }
     };
 
@@ -60,7 +60,7 @@ const LandingPricing = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.8, ease: "linear" as const }}
                     className="text-center mb-16 space-y-4"
                 >
                     <h2 className="text-primary font-bold tracking-widest uppercase text-sm">Pricing Plans</h2>

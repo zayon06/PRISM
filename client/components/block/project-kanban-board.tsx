@@ -135,7 +135,7 @@ function KanbanCard({ card }: { card: TaskCardProps }) {
 				<div className='h-0.5 w-full bg-white/10'>
 					<div
 						className='h-full bg-primary-container'
-						style={{ w: `${card.progress}%` }}
+						style={{ width: `${card.progress}%` }}
 					/>
 				</div>
 			)}

@@ -15,7 +15,7 @@ const SolutionsHero = () => {
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: 0.8, ease: "easeOut" as const }}
                     className="w-full md:w-3/4"
                 >
                     <div className="inline-block px-3 py-1 mb-6 border border-white/10 bg-white/5 rounded-sm">

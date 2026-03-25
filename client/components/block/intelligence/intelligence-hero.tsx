@@ -18,7 +18,7 @@ const IntelligenceHero = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 1, ease: "easeOut" }}
+                transition={{ duration: 1, ease: "easeOut" as const }}
                 className="relative z-10 text-center max-w-4xl"
             >
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 mb-8">

@@ -18,7 +18,7 @@ const SolutionsFeatures = () => {
         visible: { 
             opacity: 1, 
             y: 0,
-            transition: { duration: 0.8, ease: "easeOut" }
+            transition: { duration: 0.8, ease: "easeOut" as const }
         }
     };
 
@@ -61,7 +61,7 @@ const SolutionsFeatures = () => {
                         <div className="relative flex items-center gap-4 z-10">
                             <motion.div 
                                 animate={{ rotate: 360 }}
-                                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                                transition={{ duration: 10, repeat: Infinity, ease: "linear" as const }}
                                 className="w-12 h-12 rounded-full border-2 border-primary border-dashed flex items-center justify-center bg-[#050505]"
                             >
                                 <span className="text-[8px] font-bold text-primary uppercase">BE</span>
@@ -69,7 +69,7 @@ const SolutionsFeatures = () => {
                             <div className="h-2 w-12 border-t-2 border-b-2 border-white/20 relative">
                                 <motion.div 
                                     animate={{ left: ["0%", "100%", "0%"] }}
-                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as const }}
                                     className="absolute top-1/2 -translate-y-1/2 w-4 h-[1px] bg-primary shadow-[0_0_8px_#0da6f2]"
                                 ></motion.div>
                             </div>
@@ -79,13 +79,13 @@ const SolutionsFeatures = () => {
                             <div className="h-2 w-12 border-t-2 border-b-2 border-white/20 relative">
                                 <motion.div 
                                     animate={{ left: ["100%", "0%", "100%"] }}
-                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as const }}
                                     className="absolute top-1/2 -translate-y-1/2 w-4 h-[1px] bg-primary shadow-[0_0_8px_#0da6f2]"
                                 ></motion.div>
                             </div>
                             <motion.div 
                                 animate={{ rotate: -360 }}
-                                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                                transition={{ duration: 10, repeat: Infinity, ease: "linear" as const }}
                                 className="w-12 h-12 rounded-full border-2 border-primary border-dashed flex items-center justify-center bg-[#050505]"
                             >
                                 <span className="text-[8px] font-bold text-primary uppercase">FE</span>
@@ -111,7 +111,7 @@ const SolutionsFeatures = () => {
                             initial={{ width: 0 }}
                             whileInView={{ width: "65%" }}
                             viewport={{ once: true }}
-                            transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
+                            transition={{ duration: 1.5, ease: "easeOut" as const, delay: 0.5 }}
                             className="h-full bg-primary shadow-[0_0_10px_#0da6f2]"
                         ></motion.div>
                     </div>
